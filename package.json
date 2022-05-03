@@ -32,7 +32,7 @@
     "es6-shim": "0.35.5",
     "express": "^4.17.1",
     "getmac": "^1.4.6",
-    "json-schema": "^0.2.5",
+    "json-schema": "^0.4.0",
     "json-socket": "^0.3.0",
     "jwt-decode": "^2.2.0",
     "uuid": "^3.3.2",

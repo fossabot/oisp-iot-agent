@@ -25,7 +25,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 "use strict";
 var endpoint = "127.0.0.1"
-var port     = 7070
+var port     = 7076
 
 // Check for valid parameters
 if (process.argv.length != 4) {
