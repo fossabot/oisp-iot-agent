@@ -32,7 +32,13 @@
 			"qos": 1,
 			"retain": false,
 			"secure": true,
-			"retries": 5
+			"retries": 5,
+			"strictSSL": false,
+			"sparkplugB": true, 
+            "version": "spBv1.0",
+            "hwVersion": "Emulated Hardware",
+            "swVersion": "v1.0.0",
+            "rejectUnauthorized": false
 		}
 	}
 }

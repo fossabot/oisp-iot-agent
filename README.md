@@ -109,6 +109,33 @@ To start the oisp-agent service simply execute the start script:
 
 For examples of how to use the 'oisp-agent' please see the [Examples](https://github.com/Open-IoT-Service-Platform/oisp-iot-agent/tree/master/examples) provided.
 
+### Enabling SparkPlugB Standard 
+
+To send data on SparkplugB standard data format, you need to enable it on agent and add its compatible sdk(oisp-sdk-js) to it. 
+
+For this you need to make certain changed on the config.json file as below in mqtt connector section (added in config.json.template):
+
+``` bash
+ "mqtt": {
+              "host": "emqx",
+              "port": 1883,
+              "qos": 1,
+              "retain": false,
+              "secure": false,
+              "strictSSL": false,
+              "retries": 5,
+              "sparkplugB": true, 
+              "version": "spBv1.0",
+              "hwVersion": "Emulated Hardware",
+              "swVersion": "v1.0.0",
+              "rejectUnauthorized": false
+          }
+```
+ - "SparkplugB":true -> enables the sparkplugB feature of agent
+ - "version": "spBv1.0", -> version of spB standard, default is spBv1.0
+ - "hwVersion": "Emulated Hardware", ->Hardware version of device/node/agent, current value in it is for eg.
+ - "swVersion": "v1.0.0", -> SW version of device/agent; current value in it is for eg.
+
 ## Test
 
 The oisp-agent project uses [gruntjs](http://gruntjs.com/) [mocha](http://visionmedia.github.io/mocha/) as its test framework. 
